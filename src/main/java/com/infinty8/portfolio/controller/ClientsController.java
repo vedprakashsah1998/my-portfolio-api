@@ -39,5 +39,9 @@ public class ClientsController {
         return service.getClientsByName(name);
     }
 
+    @DeleteMapping("/delete/{id}")
+    public String deleteClients(@PathVariable int id){
+        return service.deleteClient(id);
+    }
 
 }

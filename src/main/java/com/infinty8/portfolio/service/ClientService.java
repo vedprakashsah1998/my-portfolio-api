@@ -42,4 +42,9 @@ public class ClientService {
         return clientRepository.findByName(name);
     }
 
+    public String deleteClient(int id){
+        clientRepository.deleteById(id);
+        return "Product removed!"+id;
+    }
+
 }
